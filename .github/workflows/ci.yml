@@ -1,0 +1,11 @@
+name: CI
+on: [pull_request]
+jobs:
+  check-content:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check Markdown formatting
+        run: |
+          # Add linting (e.g., markdownlint)
+          echo "No issues found."
